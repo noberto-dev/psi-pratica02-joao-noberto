@@ -1,1 +1,25 @@
-# psi-pratica02-joao-noberto
+# Atividade Prática 02 - Biblioteca Persistente
+
+Complete os arquivos da base usando SQLAlchemy ORM.
+
+## Como executar
+
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python main.py
+```
+
+## Defesa escrita
+
+Responda ao final:
+
+1. Para que serve o campo `disponivel` em `Livro`?
+R - Para saber se o livro pode ser emprestado
+
+2. Por que é necessário chamar `session.commit()` após emprestar ou devolver?
+R - Para salvar as alterações no banco
+
+3. Em qual consulta você usa o relacionamento entre `Livro` e `Autor`?
+R - Para buscar os livros de um autor
